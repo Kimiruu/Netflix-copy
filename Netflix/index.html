@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <title>Netflix</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Netflix</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link
           href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+        />
  
     </head>
 
     <body class="bg-black">
-        <header class="flex justify-between pt-2 pl-12 pr-12 items-center text-white">
-            <div class="flex items-center flex space-x-5">
-                <img src="./asset/img/Netflix-logo.png" alt="Netflix" width="100"> 
-                <a href="#">Home</a>
-                <a href="#">TV shows</a>
-                <a href="#">Movies</a>
-                <a href="#">New & Popular</a>
-                <a href="#">My list</a>
-                <a href="#">Watch again</a>
-            </div>
-           <div class="flex place-content-end items-center space-x-5">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-gift"></i>
-                <i class="fa-solid fa-bell"></i>
-                <div class="flex items-center space-x-2">
-                    <img src="./asset/img/icon.png" alt="" class="rounded-md" width="32px">
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-           </div>
 
+        <header class="w-full h-screen bg-cover bg-center"
+        style= "background-image: url(asset/img/header/she-ra_header.jpg)">
+        <!-- Container header icon/text -->
+            <div class="flex justify-between pt-2 pl-12 pr-12 items-center text-white">
+                <div class="flex items-center flex space-x-5">
+                    <img src="./asset/Netflix-logo.png" alt="Netflix" width="100" class="cursor-pointer"> 
+                    <a href="#" class="hover:text-gray-400">Home</a>
+                    <a href="#" class="hover:text-gray-400">TV shows</a>
+                    <a href="#" class="hover:text-gray-400">Movies</a>
+                    <a href="#" class="hover:text-gray-400">New & Popular</a>
+                    <a href="#" class="hover:text-gray-400">My list</a>
+                    <a href="#" class="hover:text-gray-400">Watch again</a>
+                </div>
+
+                <div class="flex place-content-end items-center space-x-6">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                    <i class="fa-solid fa-gift cursor-pointer"></i>
+                    <i class="fa-solid fa-bell cursor-pointer"></i>
+                    <div class="flex items-center space-x-2 cursor-pointer">
+                        <img src="./asset/img/header/icon.png" alt="" class="rounded-md" width="32px">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
         </header>
 
 
