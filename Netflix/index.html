@@ -20,11 +20,21 @@
 
     <body class="bg-white">
 
-        <header class="bg-gradient-to-b from-black to-[rgb(0,0,0,0)] fixed w-full z-10">
+        <header class="bg-gradient-to-b from-black fixed w-full h-20 z-10">
         <!-- Container header icon/text -->
+        <section class=" lg:hidden">
+            <div class="flex justify pt-2 pl-12 pr-12 place-content-center">
+              <a href="#">
+                <img src="./asset/Netflix-logo.png" alt="Netflix" width="100">
+              </a>  
+            </div>
+        </section>
+        <section class="hidden lg:block">
             <div class="flex justify-between pt-2 pl-12 pr-12 items-center text-white">
                 <div class="flex items-center flex space-x-5">
-                    <img src="./asset/Netflix-logo.png" alt="Netflix" width="100" class="cursor-pointer"> 
+                    <a href="#">
+                        <img src="./asset/Netflix-logo.png" alt="Netflix" width="100" class="cursor-pointer">
+                    </a>
                     <a href="#" class="hover:text-gray-400">Home</a>
                     <a href="#" class="hover:text-gray-400">TV shows</a>
                     <a href="#" class="hover:text-gray-400">Movies</a>
@@ -42,10 +52,11 @@
                     </div>
                 </div>
             </div>
+        </section>
         <!-- Container header icon/text -->            
-            <div class="mt-24 pl-12 space-y-3">
+            <div class="mt-32 lg:mt-24 pl-12 space-y-3">
                 <img src="./asset/img/Header/She-ra_title.png" class="max-w-lg lg:max-w-3xl">
-                <p class="text-white max-w-sm lg:max-w-xl text-justify">When a magic sword turns her destiny upside down, She-Ra joins the rebellion against evil while her best friend remains in the Wild Horde.</p>
+                <p class="text-white max-w-sm lg:max-w-xl text-justify">Sneaking out after getting promoted to Force Captain, the Horde soldier Adora finds magic sword in the whispering woods that'll turns her destiny upside. However, Princess Glimmer wants it for The Rebellion. She-Ra will joins the rebellion against evil while her best friend remains in the Wild Horde.</p>
                 <div class="space-x-8">
                     <button type="button" class="bg-white text-black py-1 px-6 rounded-md">
                         <i class="fa-solid fa-play"></i>
@@ -59,8 +70,8 @@
             </div>
         </header>
         <section class="h-screen w-screen absolute inset-0">
-            <div class="absolute bg-cover bg-top w-full h-full w-full bg-[url('./asset/img/header/she-ra_header.jpg')]" alt=""></div>
-            <div class="absolute bg-cover bg-top w-full h-full bg-gradient-to-t from-black to-[rgb(0,0,0,0)]" alt=""></div>
+            <div class="absolute bg-cover bg-top w-full h-full w-full" alt="" style= "background-image: url(asset/img/header/she-ra_header.jpg)"></div>
+            <div class="absolute bg-cover bg-top w-full h-full bg-gradient-to-t from-black via-transparent" alt=""></div>
         </section>
 
 
