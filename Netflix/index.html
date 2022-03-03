@@ -18,10 +18,9 @@
  
     </head>
 
-    <body class="bg-black font">
+    <body class="bg-white">
 
-        <header class="w-full h-screen bg-cover bg-center bg-gradient-to-b from-black to-[rgb(0,0,0,0)] bg-peaky-gradient"
-        style= "background-image: url(asset/img/header/she-ra_header.jpg)">
+        <header class="bg-gradient-to-b from-black to-[rgb(0,0,0,0)] fixed w-full z-10">
         <!-- Container header icon/text -->
             <div class="flex justify-between pt-2 pl-12 pr-12 items-center text-white">
                 <div class="flex items-center flex space-x-5">
@@ -59,7 +58,10 @@
                 </div>
             </div>
         </header>
-        <section></section>
+        <section class="h-screen w-screen absolute inset-0">
+            <div class="absolute bg-cover bg-top w-full h-full w-full bg-[url('./asset/img/header/she-ra_header.jpg')]" alt=""></div>
+            <div class="absolute bg-cover bg-top w-full h-full bg-gradient-to-t from-black to-[rgb(0,0,0,0)]" alt=""></div>
+        </section>
 
 
     </body>
