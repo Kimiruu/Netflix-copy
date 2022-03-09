@@ -1,85 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Netflix</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link
-          href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" 
-        />
- 
-    </head>
 
-    <body class="bg-white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <header class="bg-gradient-to-b from-black fixed w-full h-20 z-10">
+</head>
+<style>
+
+    /* Merci à Louis Réville de m'avoir donné ce bout de code */    
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    
+</style>
+<body class="bg-black">
+
+    <header class="w-full">
         <!-- Container header icon/text -->
-        <section class=" lg:hidden">
-            <div class="flex justify pt-2 pl-12 pr-12 place-content-center">
-              <a href="#">
-                <img src="./asset/Netflix-logo.png" alt="Netflix" width="100">
-              </a>  
-            </div>
-        </section>
-        <section class="hidden lg:block">
-            <div class="flex justify-between pt-2 pl-12 pr-12 items-center text-white">
-                <div class="flex items-center flex space-x-5">
+        <section class="fixed z-50 w-full bg-gradient-to-b from-black">
+            <section class=" lg:hidden">
+                <div class="flex justify pt-2 pl-12 pr-12 place-content-center">
                     <a href="#">
-                        <img src="./asset/Netflix-logo.png" alt="Netflix" width="100" class="cursor-pointer">
-                    </a>
-                    <a href="#" class="hover:text-gray-400">Home</a>
-                    <a href="#" class="hover:text-gray-400">TV shows</a>
-                    <a href="#" class="hover:text-gray-400">Movies</a>
-                    <a href="#" class="hover:text-gray-400">New & Popular</a>
-                    <a href="#" class="hover:text-gray-400">My list</a>
-                    <a href="#" class="hover:text-gray-400">Watch again</a>
-                </div>
-                <div class="flex place-content-end items-center space-x-6">
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-gift"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-bell"></i>
-                    </a>
-                    <a href="#" class="flex items-center space-x-2">
-                        <img src="./asset/img/header/icon.png" alt="" class="rounded-md" width="32px">
-                        <i class="fa-solid fa-caret-down"></i>
+                        <img src="./asset/Netflix-logo.png" alt="Netflix" width="100">
                     </a>
                 </div>
-            </div>
+            </section>
+            <section class="hidden lg:block">
+                <div class="flex justify-between pt-2 pl-12 pr-12 items-center text-white">
+                    <div class="flex items-center flex space-x-5">
+                        <a href="#">
+                            <img src="./asset/Netflix-logo.png" alt="Netflix" width="100" class="cursor-pointer">
+                        </a>
+                        <a href="#" class="hover:text-gray-400">Home</a>
+                        <a href="#" class="hover:text-gray-400">TV shows</a>
+                        <a href="#" class="hover:text-gray-400">Movies</a>
+                        <a href="#" class="hover:text-gray-400">New & Popular</a>
+                        <a href="#" class="hover:text-gray-400">My list</a>
+                        <a href="#" class="hover:text-gray-400">Watch again</a>
+                    </div>
+                    <div class="flex place-content-end items-center space-x-6">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-gift"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <a href="#" class="flex items-center space-x-2">
+                            <img src="./asset/img/header/icon.png" alt="" class="rounded-md" width="32px">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </section>
-        <!-- Container header logo/description/bouton -->            
-            <div class="mt-32 lg:mt-24 pl-12 space-y-5">
+        <!-- Container header logo/description/bouton -->
+        <!-- Container bg/gradient -->
+        <section class="h-screen w-full inset-0">
+            <div class="pl-12 space-y-5 z-10 absolute mt-40">
                 <img src="./asset/img/Header/She-ra_title.png" class="max-w-lg lg:max-w-3xl">
-                <p class="text-white max-w-sm lg:max-w-xl text-justify text-xl leading-7">Sneaking out after getting promoted to Force Captain, the Horde soldier Adora finds magic sword in the whispering woods that'll turns her destiny upside.</p>
+                <p class="text-white max-w-sm lg:max-w-xl text-justify text-xl leading-7">Sneaking out after getting
+                    promoted to Force Captain, the Horde soldier Adora finds magic sword in the whispering woods that'll
+                    turns her destiny upside.</p>
                 <div class="space-x-8 ">
-                    <button type="button" class="py-1 px-6 bg-white text-black text-xl font-semibold rounded-md hover:opacity-50">
+                    <button type="button"
+                        class="py-1 px-6 bg-white text-black text-xl font-semibold rounded-md hover:opacity-50">
                         <i class="fa-solid fa-play"></i>
                         Play
                     </button>
-                    <button type="button" class="py-1 px-6 bg-gray-600 bg-opacity-50 text-xl text-white font-semibold rounded-md hover:opacity-50">
+                    <button type="button"
+                        class="py-1 px-6 bg-gray-600 bg-opacity-50 text-xl text-white font-semibold rounded-md hover:opacity-50">
                         <i class="fa-solid fa-circle-info"></i>
                         More info
                     </button>
                 </div>
             </div>
-        </header>
-        <!-- Container bg/gradient -->
-        <section class="h-screen w-screen absolute inset-0">
-            <div class="absolute bg-cover bg-top w-full h-full w-full" alt="" style= "background-image: url(asset/img/header/she-ra_header.jpg)"></div>
+            <div class="absolute bg-cover bg-top w-full h-full w-full" alt=""
+            style="background-image: url(asset/img/header/she-ra_header.jpg)"></div>
             <div class="absolute bg-cover bg-top w-full h-full bg-gradient-to-t from-black via-transparent" alt=""></div>
         </section>
+    </header>
 
+    <main class="mt-20 mt-12 space-y-12">
 
-    </body>
+        <!-- My list -->
+        <section class="mx-12 space-y-4">
+            <h1 class="text-white text-xl font-bold">
+                My List
+            </h1>
+            <div class=" w-auto overflow-x-scroll no-scrollbar ">
+                <div class="flex space-x-2 w-max">
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/arcane.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/Call_me_by_your_name.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/Jojo.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/Cowboy_bebop.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/neaon_genesis_eva.png" alt="" class="rounded-md w-80">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tv Shows -->
+        <section class="mx-12 space-y-4">
+            <h1 class="text-white text-xl font-bold">
+                TV Shows 
+            </h1>
+            <div class=" w-auto overflow-x-scroll no-scrollbar">
+                <div class="flex space-x-2 w-max">
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/Atypical.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/i_m_not_oikay_with_this.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/Umbrella_academy.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/Sabrina.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Now -->
+        <section class="mx-12 space-y-4">
+            <h1 class="text-white text-xl font-bold">
+                Trending Now
+            </h1>
+            <div class=" w-auto overflow-x-scroll no-scrollbar">
+                <div class="flex space-x-2 w-max">
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/Beastars.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/Blue_Period.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/le_cuphead_show.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/miko_et_high_five.png" alt="" class="rounded-md w-80">
+                    </a>
+                    <a href="#">
+                        <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
