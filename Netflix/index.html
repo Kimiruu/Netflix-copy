@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="./asset/main.js"></script>
 </head>
 <style>
     /* Merci à Louis Réville de m'avoir donné ce bout de code */
@@ -97,79 +97,155 @@
     <main class="space-y-12">
 
         <!-- My list -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 My List
             </h1>
-            <div class=" w-auto overflow-x-scroll no-scrollbar ">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/arcane.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Call_me_by_your_name.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Jojo.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Cowboy_bebop.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/neaon_genesis_eva.png" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(1)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(1)"
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+                <div id="1" class=" w-auto overflow-x-scroll no-scrollbar ">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/arcane.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Call_me_by_your_name.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Jojo.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Cowboy_bebop.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/nos_mots_comme_des_bulles.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/the_office.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/toyo_ghoul.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/neaon_genesis_eva.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/neaon_genesis_eva.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/neaon_genesis_eva.png" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Tv Shows -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 TV Shows
             </h1>
-            <div class=" w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Atypical.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/i_m_not_oikay_with_this.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Umbrella_academy.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Sabrina.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(2)"
+                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="goright(2)"
+            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+                <div id="2" class=" w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Atypical.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/i_m_not_oikay_with_this.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Umbrella_academy.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Sabrina.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Trending Now -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 Trending Now
             </h1>
-            <div class="w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Beastars.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Blue_Period.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/le_cuphead_show.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/miko_et_high_five.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(3)"
+                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="goright(3)"
+            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+                <div id="3" class="w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Beastars.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Blue_Period.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/le_cuphead_show.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/miko_et_high_five.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -283,208 +359,369 @@
         </section>
 
         <!-- Netflix original -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 Netflix Original
             </h1>
-            <div class=" w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(4)"
+                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[475.45px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button onclick="goright(4)"
+            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[475.45px] w-20 text-2xl">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+                <div id="4" class=" w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Netflix top 10 -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 Top 10
             </h1>
-            <div class=" w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_1.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/son_vrai_visage.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_2.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/viking.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_3.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/inventing.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_4.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/the_weekend.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_5.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/qui_ment.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_6.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/mentiras.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_7.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/sans_répit.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_8.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/outlander.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_9.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/un_bail_en_enfer.png" alt="" class="rounded-md">
-                    </a>
-                    <a href="#" class="flex h-56">
-                        <img src="./asset/img/Catalogue/top_10/top_10.png" alt="">
-                        <img src="./asset/img/Catalogue/top_10/baywatch.png" alt="" class="rounded-md">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(5)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[224px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(5)"
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[224px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+                <div id="5" class=" w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_1.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/son_vrai_visage.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_2.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/viking.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_3.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/inventing.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_4.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/the_weekend.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_5.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/qui_ment.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_6.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/mentiras.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_7.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/sans_répit.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_8.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/outlander.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_9.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/un_bail_en_enfer.png" alt="" class="rounded-md">
+                        </a>
+                        <a href="#" class="flex h-56">
+                            <img src="./asset/img/Catalogue/top_10/top_10.png" alt="">
+                            <img src="./asset/img/Catalogue/top_10/baywatch.png" alt="" class="rounded-md">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Animation for adult -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 Animation for adult
             </h1>
-            <div class="w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/rick_morty.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/queer_force.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/big_mouth.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/bojak.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/close_enough.png" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(6)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(6)"
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+                <div id="6" class="w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/rick_morty.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/queer_force.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/big_mouth.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/bojak.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/close_enough.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/close_enough.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/close_enough.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/close_enough.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/close_enough.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/close_enough.png" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Our selection for you -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 Our selection for you
             </h1>
-            <div class="w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/devilman_crybaby.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/great_petender.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/little_witch_academia.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/nos_mots_comme_des_bulles.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/snk.png" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(7)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(7)"
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+                <div id="7" class="w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/devilman_crybaby.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/great_petender.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/little_witch_academia.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/nos_mots_comme_des_bulles.png" alt=""
+                                class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/snk.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/snk.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/snk.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/snk.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/snk.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/snk.png" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Watch again -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 Watch again
             </h1>
-            <div class="w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/shrek.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/shrek_2.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/shrek_3.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/shrek_4.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/bee.png" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(8)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(8)"
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+                <div id="8" class="w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/shrek.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/shrek_2.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/shrek_3.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/shrek_4.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/bee.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/bee.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/bee.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/bee.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/bee.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/bee.png" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Comedy -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 Comedy
             </h1>
-            <div class="w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/megamind.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/lego.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/bo_burnham.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/ready_player_one.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/the_end_of_the_fcking_world.png" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(9)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.75px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(9)"
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.75px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+                <div id="9" class="w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/megamind.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/lego.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/bo_burnham.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/ready_player_one.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/the_end_of_the_fcking_world.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/the_end_of_the_fcking_world.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/the_end_of_the_fcking_world.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/the_end_of_the_fcking_world.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/the_end_of_the_fcking_world.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/the_end_of_the_fcking_world.png" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Relax -->
-        <section class="mx-12 space-y-4">
+        <section class="mx-12 space-y-4 group">
             <h1 class="text-white text-xl font-bold">
                 Relax
             </h1>
-            <div class="w-auto overflow-x-scroll no-scrollbar">
-                <div class="flex space-x-2 w-max">
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/tick_tick_boom.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/the_amazing_spiderman.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/violet_evergarden.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Voltron.png" alt="" class="rounded-md w-80">
-                    </a>
-                    <a href="#">
-                        <img src="./asset/img/Catalogue/Titans.png" alt="" class="rounded-md w-80">
-                    </a>
+            <div class="flex">
+                <button onclick = "goleft(10)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(10)"
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+                <div id="10" class="w-auto overflow-x-scroll no-scrollbar">
+                    <div class="flex space-x-2 w-max">
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/tick_tick_boom.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/the_amazing_spiderman.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/violet_evergarden.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Voltron.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Titans.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Titans.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Titans.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Titans.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Titans.png" alt="" class="rounded-md w-80">
+                        </a>
+                        <a href="#">
+                            <img src="./asset/img/Catalogue/Titans.png" alt="" class="rounded-md w-80">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -580,3 +817,5 @@
         </p>
     </footer>
 </body>
+
+</html>
