@@ -25,7 +25,7 @@
 
 <body class="bg-black">
 
-    <header class="w-full">
+    <header class="w-full" onmouseover = 'video()' onmouseout = 'video2()'>
         <!-- Container header icon/text -->
         <section class="fixed z-50 w-full bg-gradient-to-b from-black transition-all duration-500" id="navbar">
             <section class=" lg:hidden">
@@ -86,8 +86,11 @@
                     </button>
                 </div>
             </div>
-            <div class="absolute bg-cover bg-top w-full h-full w-full" alt=""
+            <div class="absolute bg-cover bg-top h-full w-full" alt=""
                 style="background-image: url(asset/img/header/she-ra_header.jpg)"></div>
+                <video autoplay muted class="opacity-0 transition-all duration-500 absolute bg-top h-full w-full object-cover" id="bgvid">
+                    <source src="./asset/Season 5 Trailer _ SHE-RA AND THE PRINCESSES OF POWER _ Netflix.mp4" type="video/mp4">
+                  </video>
             <div class="absolute bg-cover bg-top w-full h-full bg-gradient-to-t from-black via-transparent" alt="">
             </div>
         </section>
@@ -102,45 +105,45 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(1)"
-                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(1)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
 
                 <div id="1" class=" w-auto overflow-x-scroll no-scrollbar ">
                     <div class="flex space-x-2 w-max">
                         <a href="#">
-                            <img src="./asset/img/Catalogue/arcane.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/arcane.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Call_me_by_your_name.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Call_me_by_your_name.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Jojo.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Jojo.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Cowboy_bebop.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Cowboy_bebop.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/nos_mots_comme_des_bulles.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/nos_mots_comme_des_bulles.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/the_office.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/the_office.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/toyo_ghoul.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/toyo_ghoul.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/h2o.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/h2o.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/naruto.webp" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/naruto.webp" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/my_hero_academia.webp" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/my_hero_academia.webp" alt="" class="rounded-md w-60">
                         </a>
                     </div>
                 </div>
@@ -154,44 +157,44 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(2)"
-                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
             <button onclick="goright(2)"
-            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
                 <div id="2" class=" w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max">
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Atypical.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Atypical.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/i_m_not_oikay_with_this.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/i_m_not_oikay_with_this.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Umbrella_academy.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Umbrella_academy.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Sabrina.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Sabrina.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/batman.webp" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/batman.webp" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/flash.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/flash.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/outlander.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/outlander.jpg" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Skins.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Skins.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/you.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/you.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/wakfu.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/wakfu.png" alt="" class="rounded-md w-60">
                         </a>
                     </div>
                 </div>
@@ -205,44 +208,44 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(3)"
-                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
             <button onclick="goright(3)"
-            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
                 <div id="3" class="w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max">
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Beastars.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Beastars.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/Blue_Period.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/Blue_Period.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/le_cuphead_show.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/le_cuphead_show.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/miko_et_high_five.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/miko_et_high_five.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/hunter_hunter.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/stranger_things.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/stranger_things.jpg" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/sex_ed.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/naruto_ship.webp" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/naruto_ship.webp" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/tick_tick_boom.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/tick_tick_boom.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/the_office.png" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/the_office.png" alt="" class="rounded-md w-60">
                         </a>
                     </div>
                 </div>
@@ -263,91 +266,91 @@
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/anime.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-pink-700 hover:from-pink-700/60 to-pink-700/10">
                         <div>Anime</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/children.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-teal-700 hover:from-teal-700/60 to-teal-700/10">
                         <div>Children</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/come╠üdie.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-amber-700 hover:from-amber-700/60 to-amber-700/10">
                         <div>Comedy</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/documentaire.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-lime-700 hover:from-lime-700/60 to-lime-700/10">
                         <div>Docuseries</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/drama.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-rose-700 hover:from-rose-700/60 to-rose-700/10">
                         <div>Drama</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/fantasy.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-red-700 hover:from-red-700/60 to-red-700/10">
                         <div>Fantasy</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/french.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-blue-700 hover:from-blue-700/60 to-blue-700/10">
                         <div>French</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/horror.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-purple-700 hover:from-purple-700/60 to-purple-700/10">
                         <div>Horror</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/international.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-green-700 hover:from-green-700/60 to-green-700/10">
                         <div>International</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/reality.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-fuchsia-700 hover:from-fuchsia-700/60 to-fuchsia-700/10">
                         <div>Reality</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/romance.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-yellow-700 hover:from-yellow-700/60 to-yellow-700/10">
                         <div>Romance</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/sci-fi.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-sky-700 hover:from-sky-700/60 to-sky-700/10">
                         <div>Sci-Fi</div>
                     </div>
                 </a>
                 <a href="#" class="text-xl h-20 text-white bg-cover bg-top rounded-md"
-                    style="background-image: url(asset/img/Catalogue/genre/genre_action.jpg)">
+                    style="background-image: url(asset/img/Catalogue/genre/thriller.png)">
                     <div
                         class="rounded-md flex pl-2 items-center font-bold bg-cover bg-top w-full h-full bg-gradient-to-r from-emerald-700 hover:from-emerald-700/60 to-emerald-700/10">
                         <div>Thriller</div>
@@ -364,44 +367,44 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(4)"
-                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[475.45px] w-20 text-2xl">
+                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[476.36px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
             <button onclick="goright(4)"
-            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[475.45px] w-20 text-2xl">
+            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[476.36px] w-20 text-2xl">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
                 <div id="4" class=" w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max">
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/1.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/2.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/3.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/4.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/5.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/6.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/7.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/8.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/9.png" alt="" class="rounded-md w-60">
                         </a>
                         <a href="#">
-                            <img src="./asset/img/Catalogue/rectangle_test.jpg" alt="" class="rounded-md w-80">
+                            <img src="./asset/img/Catalogue/original/10.png" alt="" class="rounded-md w-60">
                         </a>
                     </div>
                 </div>
@@ -424,43 +427,43 @@
             </button>
                 <div id="5" class=" w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max">
-                        <a href="#" class="flex h-56">
-                            <img src="./asset/img/Catalogue/top_10/top_1.png" alt="">
+                        <a href="#" class="flex h-48">
+                            <img src="./asset/img/Catalogue/top_10/top_1.png" alt="" class="rounded-md ">
                             <img src="./asset/img/Catalogue/top_10/son_vrai_visage.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_2.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/viking.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_3.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/inventing.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_4.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/the_weekend.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_5.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/qui_ment.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_6.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/mentiras.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_7.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/sans_répit.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_8.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/outlander.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_9.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/un_bail_en_enfer.png" alt="" class="rounded-md">
                         </a>
-                        <a href="#" class="flex h-56">
+                        <a href="#" class="flex h-48">
                             <img src="./asset/img/Catalogue/top_10/top_10.png" alt="">
                             <img src="./asset/img/Catalogue/top_10/baywatch.png" alt="" class="rounded-md">
                         </a>
@@ -476,11 +479,11 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(6)"
-                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(6)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
                 <div id="6" class="w-auto overflow-x-scroll no-scrollbar">
@@ -498,11 +501,11 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(7)"
-                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(7)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
                 <div id="7" class="w-auto overflow-x-scroll no-scrollbar">
@@ -520,11 +523,11 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(8)"
-                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(8)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
                 <div id="8" class="w-auto overflow-x-scroll no-scrollbar">
@@ -542,11 +545,11 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(9)"
-                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.75px] w-20 text-2xl">
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[135.51px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(9)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.75px] w-20 text-2xl">
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[135.51px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
                 <div id="9" class="w-auto overflow-x-scroll no-scrollbar">
@@ -564,11 +567,11 @@
             </h1>
             <div class="flex">
                 <button onclick = "goleft(10)"
-                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[136.66px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(10)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[181.35px] w-20 text-2xl">
+                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[136.66px] w-20 text-2xl">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
                 <div id="10" class="w-auto overflow-x-scroll no-scrollbar">

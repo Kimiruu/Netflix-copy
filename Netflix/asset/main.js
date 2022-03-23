@@ -110,19 +110,27 @@ let img = {
 }
 
 function random_image(arg, list) {
+
     let imgList = list
+
     let div = document.getElementById(arg)
+
     for (let i = 0; i < 10; i++) {
+
         let a = document.createElement('a')
         div.appendChild(a)
         let img1 = document.createElement('img')
+
         let random = Math.floor(Math.random() * (imgList.length))
         img1.src = imgList[random]
+
         imgList = imgList.filter(function (value, index, arr) {
             return index !== random;
         });
+
         a.appendChild(img1)
-        img1.classList.add('rounded-md', 'w-80')
+        img1.classList.add('rounded-md', 'w-60')
+
     }
 }
 
@@ -212,3 +220,13 @@ window.addEventListener('scroll', function(e) {
         navbar.classList.remove('bg-black')
     }
 })
+
+const vid = document.getElementById('bgvid')
+
+function video() {
+    vid.classList.add('opacity-100')
+}
+
+function video2() {
+    vid.classList.remove('opacity-100')
+}
