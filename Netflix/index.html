@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
 <style>
     .no-scrollbar::-webkit-scrollbar {
@@ -25,7 +25,7 @@
 
 <body class="bg-black">
 
-    <header class="w-full" onmouseover = 'video()' onmouseout = 'video2()'>
+    <header class="w-full" onmouseover='video()' onmouseout='video2()'>
         <!-- Container header icon/text -->
         <section class="fixed z-50 w-full bg-gradient-to-b from-black transition-all duration-500" id="navbar">
             <section class=" lg:hidden">
@@ -88,9 +88,11 @@
             </div>
             <div class="absolute bg-cover bg-top h-full w-full" alt=""
                 style="background-image: url(asset/img/header/she-ra_header.jpg)"></div>
-                <video autoplay muted class="opacity-0 transition-all duration-500 absolute bg-top h-full w-full object-cover" id="bgvid">
-                    <source src="./asset/Season 5 Trailer _ SHE-RA AND THE PRINCESSES OF POWER _ Netflix.mp4" type="video/mp4">
-                  </video>
+            <video autoplay muted
+                class="opacity-0 transition-all duration-500 absolute bg-top h-full w-full object-cover" id="bgvid">
+                <source src="./asset/img/Season 5 Trailer _ SHE-RA AND THE PRINCESSES OF POWER _ Netflix.mp4"
+                    type="video/mp4">
+            </video>
             <div class="absolute bg-cover bg-top w-full h-full bg-gradient-to-t from-black via-transparent" alt="">
             </div>
         </section>
@@ -99,51 +101,123 @@
     <main class="space-y-12">
 
         <!-- My list -->
-        <section class="mx-12 space-y-4 group">
+        <section class="mx-12 group">
             <h1 class="text-white text-xl font-bold">
                 My List
             </h1>
             <div class="flex">
-                <button onclick = "goleft(1)"
-                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                <button onclick="goleft(1)"
+                    class="mt-5 z-50 text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(1)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+                    class="mt-5 z-50 text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
 
-                <div id="1" class=" w-auto overflow-x-scroll no-scrollbar ">
+                <div id="1" class="py-5 w-auto overflow-x-scroll h-44 no-scrollbar ">
                     <div class="flex space-x-2 w-max">
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/arcane.png" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler1img","trailler1vid")'
+                            onmouseout='trailler2("trailler1img","trailler1vid")'>
+
+                            <img src="./asset/img/Catalogue/arcane.png" alt=""
+                                class="rounded-md w-60 hover:scale-125 opacity-100 transition-all duration-300"
+                                id="trailler1img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300"
+                                id="trailler1vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/Call_me_by_your_name.png" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler2img","trailler2vid")'
+                        onmouseout='trailler2("trailler2img","trailler2vid")'>
+
+                            <img src="./asset/img/Catalogue/Call_me_by_your_name.png" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler2img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler2vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/Jojo.png" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler3img","trailler3vid")'
+                        onmouseout='trailler2("trailler3img","trailler3vid")'>
+
+                            <img src="./asset/img/Catalogue/Jojo.png" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler3img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler3vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/Cowboy_bebop.png" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler4img","trailler4vid")'
+                        onmouseout='trailler2("trailler4img","trailler4vid")'>
+
+                            <img src="./asset/img/Catalogue/Cowboy_bebop.png" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler4img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler4vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/nos_mots_comme_des_bulles.png" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler5img","trailler5vid")'
+                        onmouseout='trailler2("trailler5img","trailler5vid")'>
+
+                            <img src="./asset/img/Catalogue/nos_mots_comme_des_bulles.png" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler5img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler5vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/the_office.png" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler6img","trailler6vid")'
+                        onmouseout='trailler2("trailler6img","trailler6vid")'>
+
+                            <img src="./asset/img/Catalogue/the_office.png" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler6img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler6vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/toyo_ghoul.png" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler7img","trailler7vid")'
+                        onmouseout='trailler2("trailler7img","trailler7vid")'>
+
+                            <img src="./asset/img/Catalogue/toyo_ghoul.png" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler7img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler7vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/h2o.png" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler8img","trailler8vid")'
+                        onmouseout='trailler2("trailler8img","trailler8vid")'>
+
+                            <img src="./asset/img/Catalogue/h2o.png" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler8img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler8vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/naruto.webp" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler9img","trailler9vid")'
+                        onmouseout='trailler2("trailler9img","trailler9vid")'>
+
+                            <img src="./asset/img/Catalogue/naruto.webp" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler9img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler9vid"></video>
                         </a>
-                        <a href="#">
-                            <img src="./asset/img/Catalogue/my_hero_academia.webp" alt="" class="rounded-md w-60">
+
+                        <a href="#" class='' onmouseover='trailler("trailler10img","trailler10vid")'
+                        onmouseout='trailler2("trailler10img","trailler10vid")'>
+
+                            <img src="./asset/img/Catalogue/my_hero_academia.webp" alt=""
+                                class="rounded-md w-60 hover:scale-125 transition-all duration-300" id="trailler10img">
+
+                            <video autoplay muted src="./asset/img/Catalogue/Arcane_ Official Trailer_Trim.mp4"
+                                class="mt-[-135.9px] rounded-md w-60 opacity-0 hover:scale-125 transition-all duration-300" id="trailler10vid"></video>
                         </a>
                     </div>
                 </div>
@@ -156,14 +230,14 @@
                 TV Shows
             </h1>
             <div class="flex">
-                <button onclick = "goleft(2)"
-                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button onclick="goright(2)"
-            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
+                <button onclick="goleft(2)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(2)"
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="2" class=" w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max">
                         <a href="#">
@@ -207,14 +281,14 @@
                 Trending Now
             </h1>
             <div class="flex">
-                <button onclick = "goleft(3)"
-                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button onclick="goright(3)"
-            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
+                <button onclick="goleft(3)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(3)"
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="3" class="w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max">
                         <a href="#">
@@ -366,14 +440,14 @@
                 Netflix Original
             </h1>
             <div class="flex">
-                <button onclick = "goleft(4)"
-                class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[476.36px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button onclick="goright(4)"
-            class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[476.36px] w-20 text-2xl">
-            <i class="fa-solid fa-chevron-right"></i>
-        </button>
+                <button onclick="goleft(4)"
+                    class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[476.36px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button onclick="goright(4)"
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[476.36px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="4" class=" w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max">
                         <a href="#">
@@ -417,14 +491,14 @@
                 Top 10
             </h1>
             <div class="flex">
-                <button onclick = "goleft(5)"
+                <button onclick="goleft(5)"
                     class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[224px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(5)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[224px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[224px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="5" class=" w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max">
                         <a href="#" class="flex h-48">
@@ -478,14 +552,14 @@
                 Animation
             </h1>
             <div class="flex">
-                <button onclick = "goleft(6)"
+                <button onclick="goleft(6)"
                     class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(6)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="6" class="w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max" id="Animation">
 
@@ -500,14 +574,14 @@
                 Our selection for you
             </h1>
             <div class="flex">
-                <button onclick = "goleft(7)"
+                <button onclick="goleft(7)"
                     class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(7)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="7" class="w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max" id="ourselectionfu">
 
@@ -522,17 +596,17 @@
                 Watch again
             </h1>
             <div class="flex">
-                <button onclick = "goleft(8)"
+                <button onclick="goleft(8)"
                     class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(8)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[134.81px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="8" class="w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max" id="watchagain">
-                        
+
                     </div>
                 </div>
             </div>
@@ -544,14 +618,14 @@
                 Comedy
             </h1>
             <div class="flex">
-                <button onclick = "goleft(9)"
+                <button onclick="goleft(9)"
                     class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[135.51px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(9)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[135.51px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[135.51px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="9" class="w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max" id="Comedy">
 
@@ -566,14 +640,14 @@
                 Action
             </h1>
             <div class="flex">
-                <button onclick = "goleft(10)"
+                <button onclick="goleft(10)"
                     class="text-white absolute group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-r from-black to-[rgb(0,0,0,0)] h-[136.66px] w-20 text-2xl">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button onclick="goright(10)"
-                class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[136.66px] w-20 text-2xl">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
+                    class="text-white absolute right-10 group-hover:opacity-100 opacity-0 transition-all duration-500 bg-gradient-to-l from-black to-[rgb(0,0,0,0)] h-[136.66px] w-20 text-2xl">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
                 <div id="10" class="w-auto overflow-x-scroll no-scrollbar">
                     <div class="flex space-x-2 w-max" id="Action">
 
@@ -674,4 +748,5 @@
     </footer>
 </body>
 <script src="./asset/main.js"></script>
+
 </html>

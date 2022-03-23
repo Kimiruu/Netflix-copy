@@ -230,3 +230,23 @@ function video() {
 function video2() {
     vid.classList.remove('opacity-100')
 }
+
+function trailler(arri, arrv) {
+    let i = document.getElementById(arri)
+    i.classList.add('opacity-0')
+    i.classList.remove('opacity-100')    
+
+    let v = document.getElementById(arrv)
+    v.classList.add('opacity-100')
+    v.classList.remove('opacity-0')
+}
+
+function trailler2(arri, arrv) {
+    let i = document.getElementById(arri)
+    i.classList.remove('opacity-0')
+    i.classList.add('opacity-100') 
+
+    let v = document.getElementById(arrv)
+    v.classList.add('opacity-0')
+    v.classList.remove('opacity-100')
+}
