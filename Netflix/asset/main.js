@@ -250,3 +250,16 @@ function trailler2(arri, arrv) {
     v.classList.add('opacity-0')
     v.classList.remove('opacity-100')
 }
+
+const y = document.getElementById('icon1')
+const children = document.getElementById('Menu1')
+
+const mouseover = () => {
+    children.classList.add('block')
+    children.classList.remove('hidden')
+};
+
+const mousenotover = () => {
+    children.classList.add('hidden')
+    children.classList.remove('block')
+};
